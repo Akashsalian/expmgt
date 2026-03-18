@@ -1,0 +1,148 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background: linear-gradient(-45deg, #000000, #0f172a, #020617, #0a0f2c);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 15px;
+    width: 30%;
+    text-align: center;
+    font-weight: bold;
+    backdrop-filter: blur(12px);
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 198, 255, 0.3);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 20px #00c6ff;
+}
+
+.income { border-left: 4px solid #00ff99; }
+.expense { border-left: 4px solid #ff4d4d; }
+.balance { border-left: 4px solid #00c6ff; }
+
+
+button, a.button {
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    transition: 0.3s;
+}
+
+button:hover, a.button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 10px #00c6ff;
+}
+
+button:active, a.button:active {
+    transform: scale(0.95);
+}
+
+
+a.edit-btn {
+    background: linear-gradient(45deg, #1e5097, #0099ff);
+}
+
+
+a.delete-btn {
+    background: linear-gradient(45deg, #ff4d4d, #cc0000);
+}
+
+
+a.edit-btn:hover {
+    box-shadow: 0 0 10px #00c6ff;
+}
+
+a.delete-btn:hover {
+    box-shadow: 0 0 10px #ff4d4d;
+}
+
+
+table {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+table th {
+    padding: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #263f43, #343057);
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 198, 255, 0.5);
+}
+
+
+table td {
+    padding: 10px;
+    text-align: center;
+}
+
+
+table tr:hover {
+    background: rgba(0, 198, 255, 0.1);
+}
+
+
+input, select {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    width: 250px;
+    background: #020617;
+    color: white;
+    border: 1px solid #00c6ff;
+}
+
+input:focus, select:focus {
+    box-shadow: 0 0 10px #00c6ff;
+}

@@ -1,7 +1,7 @@
 # 💰 Expense Tracker Web App
 
 ## 📌 Overview
-Expense Tracker Web App Web App is a full-stack web application designed to help users efficiently track and manage their income and expenses. Built using Flask and MySQL, the application provides real-time financial insights with a clean and modern user interface.
+Expense Tracker Web App is a full-stack web application designed to help users efficiently track and manage their income and expenses. Built using Flask and MySQL, the application provides real-time financial insights with a clean and modern user interface.
 
 ---
 
